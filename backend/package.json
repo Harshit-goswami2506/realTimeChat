@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "nodemon index.js",
-    "start": "node server"
+    "start": "node server",
+    "vercel-start": "node index.js"
   },
   "author": "Harshit Goswami",
   "license": "ISC",

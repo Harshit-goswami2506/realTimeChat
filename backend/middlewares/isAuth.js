@@ -11,7 +11,7 @@ const isAuth=async(req,res,next)=>{
         req.userId=verifyToken.userId;
         next();
     } catch (error) {
-        return res.status(401).json({message:"Unauthorized"});
+        return res.status(401).json({message:`Unauthorized ${error}`});
     }
 }
 export default isAuth;  

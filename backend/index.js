@@ -13,7 +13,7 @@ dotenv.config();
 const port = process.env.PORT || 8080; 
 
 
-app.use(cors({origin:"https://realtimechat-hqg0.onrender.com",credentials:true}));
+app.use(cors({origin: ["http://localhost:5173", "https://realtimechat-hqg0.onrender.com"],credentials:true}));
 app.use(express.json());
 app.use(cookieParser());
 app.use("/api/auth",authRouter);

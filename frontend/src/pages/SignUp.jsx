@@ -63,11 +63,11 @@ function SignUp() {
             </div>
               {error && <p className='text-red-500'>{error}</p>}
            
-            <button className='w-[90%] h-[50px] rounded-lg bg-[#20c7ff] text-white font-bold text-[20px] hover:bg-[#00bfff] shadow-gray-400 shadow-md' disabled={loading} >Sign Up</button>
+            <button className='w-[90%] h-[50px] rounded-lg bg-[#20c7ff] text-white font-bold text-[20px] hover:bg-[#00bfff] shadow-gray-400 shadow-md' disabled={loading} >{loading?"Loading...":"Sign Up"}</button>
            
            
            
-            <p className='text-gray-600 cursor-pointer' onClick={()=>navigate("/login") }>Already have an account? <span className='text-[#20c7ff] font-bold'>{loading?"Loading...":"Login"}</span></p>
+            <p className='text-gray-600 cursor-pointer' onClick={()=>navigate("/login") }>Already have an account? <span className='text-[#20c7ff] font-bold'>Login</span></p>
         </form>
         </div>
        
